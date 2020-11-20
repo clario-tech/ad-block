@@ -3,7 +3,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "./filter.h"
 #include <string.h>
 #include <stdio.h>
 #include <math.h>
@@ -13,7 +12,8 @@
 #ifdef ENABLE_REGEX
 #include <regex> // NOLINT
 #endif
-#include "./hash_set.h"
+#include "./filter.h"
+#include "hash_set.h"
 #include "./ad_block_client.h"
 #include "hashFn.h"
 #include "BloomFilter.h"
